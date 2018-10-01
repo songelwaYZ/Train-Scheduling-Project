@@ -8,61 +8,68 @@
             href="bulma.min.css" />
     </head>
     <body>
-        <script>
-            function hoverOverSurname(){
-                alert("hovering over surname")
-
-            }
-            
-        </script>
-
-
-
-
         <h2>This is an example of a form</h2>
         <div class="container">
             <form class="form">
                 <div class="field">
                     <label class="label">name</label>
                     <input 
-                    class="input" 
-                    type="text" 
-                    onmouseover="alert('you hovered over the name')"/>
+                        class="input" 
+                        type="text"
+                        id="name"/>
                 </div>
                 
                 <div class="field">
                     <label class="label">surname</label>
-                    <input class="input" type="text" onmouseover="hoverOverSurname()"/>
+                    <input 
+                        class="input" 
+                        type="text" 
+                        id="surname"/>
                 </div>
 
                 <div class="field">
                     <label class="label">age</label>
-                    <input class="input" type="number"/>
+                    <input
+                        id="age"
+                        class="input" 
+                        type="number"/>
                 </div>
 
                 <div class="field">
                     <label class="label">gender</label>
-                    <input class="input" type="text"/>
+                    <input
+                        id="gender"
+                        class="input" 
+                        type="text"/>
                 </div>
 
                 <div class="field">
                     <label class="label">address</label>
-                    <input class="input" type="text"/>
+                    <input
+                        id="address" 
+                        class="input" 
+                        type="text"/>
                 </div>
 
                 <div class="field">
                     <label class="label">phone</label>
-                    <input class="input" type="number"/>
+                    <input 
+                    class="input" 
+                    type="number" 
+                    id="phone"/>
                 </div>
                 
                 <div class="field">
                     <input 
-                        type="submit" 
+                        id = "submit"
+                        type="submit" S
                         value="submit" 
                         class="button is-primary"
-                        onclick="alert('clicked on submit button')"/>
+
+                        />
                 </div>
             </form>
         </div>
+        <script src= "script.js"></script>
     </body>
 </html>
