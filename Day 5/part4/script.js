@@ -6,6 +6,7 @@ window.onload= function(){
         validateName()
         validateSurname()
         validateAge()
+        validatePhone()
 
        
         
@@ -74,7 +75,19 @@ function getAddress(){
 
 /**Function gets phone from the phone input */
 function validatePhone(){
-    var phone = document.getElementById('phone')
+    var phone = document.getElementById('phone').value
+    var phoneError = document.getElementById('phone-error')
+    var phoneCode = document.getElementById('code')
+
+    if(phone.value !=073 && phone.length ==10){
+        phoneError.classList.remove('is-invisible')
+        phoneCode.classList.add('is-invisible')
+
+    }
+    else{
+        phoneError.classList.add('is-invisible')
+        phoneCode.classList.remove('is-invisible')
+    }
     
 }
 
