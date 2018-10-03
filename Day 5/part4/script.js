@@ -78,11 +78,23 @@ function validatePhone(){
     var phone = document.getElementById('phone').value
     var phoneError = document.getElementById('phone-error')
     var phoneCode = document.getElementById('code')
+<<<<<<< HEAD
     if(code !==073&& phone.value==10){
+=======
+
+    if(phone.value !=073 && phone.length ==10){
+>>>>>>> d89e41b964d01e67d74c301102fd5948cd4397f0
         phoneError.classList.remove('is-invisible')
         phoneCode.classList.add('is-invisible')
 
     }
+<<<<<<< HEAD
+=======
+    else{
+        phoneError.classList.add('is-invisible')
+        phoneCode.classList.remove('is-invisible')
+    }
+>>>>>>> d89e41b964d01e67d74c301102fd5948cd4397f0
     
 }
 
