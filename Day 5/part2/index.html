@@ -9,15 +9,13 @@
     </head>
     <body>
         <script>
-            function hoverOverSurname(){
-                alert("hovering over surname")
-
+            window.onload= function(){
+                var submitButton = document.getElementById('submit')
+                submitButton.addEventListener('click', function(event){
+                    alert('you clicked submit again')
+                })
             }
-            
         </script>
-
-
-
 
         <h2>This is an example of a form</h2>
         <div class="container">
@@ -25,29 +23,41 @@
                 <div class="field">
                     <label class="label">name</label>
                     <input 
-                    class="input" 
-                    type="text" 
-                    onmouseover="alert('you hovered over the name')"/>
+                        id="name"
+                        class="input" 
+                        type="text"/>
                 </div>
                 
                 <div class="field">
                     <label class="label">surname</label>
-                    <input class="input" type="text" onmouseover="hoverOverSurname()"/>
+                    <input 
+                        class="input" 
+                        type="text" 
+                        id="surname"/>
                 </div>
 
                 <div class="field">
                     <label class="label">age</label>
-                    <input class="input" type="number"/>
+                    <input
+                        id="age"
+                        class="input" 
+                        type="number"/>
                 </div>
 
                 <div class="field">
                     <label class="label">gender</label>
-                    <input class="input" type="text"/>
+                    <input
+                        id="gender"
+                        class="input" 
+                        type="text"/>
                 </div>
 
                 <div class="field">
                     <label class="label">address</label>
-                    <input class="input" type="text"/>
+                    <input
+                        id="address" 
+                        class="input" 
+                        type="text"/>
                 </div>
 
                 <div class="field">
@@ -57,10 +67,12 @@
                 
                 <div class="field">
                     <input 
+                        id = "submit"
                         type="submit" 
                         value="submit" 
                         class="button is-primary"
-                        onclick="alert('clicked on submit button')"/>
+
+                        />
                 </div>
             </form>
         </div>
