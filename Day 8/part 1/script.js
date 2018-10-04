@@ -215,4 +215,6 @@ function addLinesToDropdown(linesList) {
     linesList.forEach(function(line) {
         linesSelect.options.add(new Option(line.name, line.id, false, false))
     })
+
+    }
 }
